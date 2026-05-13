@@ -7,9 +7,9 @@ on:
     branches: [main]       # Trigger on PRs — blocks merge if High found
   workflow_dispatch:       # Manual trigger via Actions tab
 
-#permissions:
- # contents: read           # Needed to checkout code
-  #issues: write            # Needed for ZAP to open GitHub Issue with findings
+permissions:
+  contents: read           # Needed to checkout code
+  issues: write            # Needed for ZAP to open GitHub Issue with findings
 
 jobs:
   zap_scan:
